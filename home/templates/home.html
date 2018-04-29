@@ -1,0 +1,27 @@
+<!--Video 13, secao 2. Import Static-->
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport"
+		  content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	
+	<title>HTML5 – Estrutura básica</title>
+</head>
+<body>
+
+	<h1>Seja bem vindo</h1>
+	<!-- Toda vez que o django inicia uma secao, ele injeta uma variavel chamada user -->
+	{% if user.is_authenticated %}
+		<p>Ola {{ user.username }}</p>
+		<a href="{% url 'logout' %}">Sair</a>
+	{% else %}
+		<a href="{% url 'login' %}">Logar</a>
+	{% endif %}	
+
+
+</body>
+</html>

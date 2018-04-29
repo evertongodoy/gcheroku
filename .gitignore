@@ -1,0 +1,7 @@
+*.idea
+*.sqlite3
+.envt
+*pyc
+*medias
+*clients_photos
+.env

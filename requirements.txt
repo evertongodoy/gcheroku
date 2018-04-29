@@ -1,0 +1,4 @@
+-r requirements-dev.txt
+gunicorn
+cx-Oracle==6.2.1
+psycopg2==2.7.4
